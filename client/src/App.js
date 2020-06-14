@@ -1,17 +1,15 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { useFirebaseAuth } from 'use-firebase-auth';
+import SignUp from "./components/SignUp";
 function App() {
-  const { user, loading, error, signInWithProvider } = useFirebaseAuth();
-  console.log(user, loading, error, signInWithProvider);
-  useEffect(() => {
-    signInWithProvider('google');
-  }, []);
+  const { user, loading, error, signInWithProvider, signInWithEmailAndPassword, createUserWithEmailAndPassword } = useFirebaseAuth();
+  console.log(user, loading, error, signInWithProvider, signInWithEmailAndPassword, createUserWithEmailAndPassword);
   return (
-    <div className="App">
-      <header className="App-header">
-        {user && <p>Hello! {user.displayName}</p>}
+    < div className="App">
+      {user && 
+        <header className="App-header"><p>Hello! {user.displayName}</p>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -20,6 +18,8 @@ function App() {
           Learn React
         </a>
       </header>
+      }
+      {!user && <SignUp />}``
     </div>
   );
 }
