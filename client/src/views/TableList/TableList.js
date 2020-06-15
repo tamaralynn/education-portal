@@ -54,56 +54,24 @@ export default function TableList() {
             </p>
           </CardHeader>
           <CardBody>
-            <Table
-              tableHeaderColor="primary"
-              tableHead={["Name", "Country", "City", "Salary"]}
-              tableData={[
-                ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                ["Mason Porter", "Chile", "Gloucester", "$78,615"]
-              ]}
-            />
-          </CardBody>
-        </Card>
-      </GridItem>
-      <GridItem xs={12} sm={12} md={12}>
-        <Card plain>
-          <CardHeader plain color="primary">
-            <h4 className={classes.cardTitleWhite}>
-              Table on Plain Background
-            </h4>
-            <p className={classes.cardCategoryWhite}>
-              Here is a subtitle for this table
-            </p>
-          </CardHeader>
-          <CardBody>
-            <Table
-              tableHeaderColor="primary"
-              tableHead={["ID", "Name", "Country", "City", "Salary"]}
-              tableData={[
-                ["1", "Dakota Rice", "$36,738", "Niger", "Oud-Turnhout"],
-                ["2", "Minerva Hooper", "$23,789", "Curaçao", "Sinaai-Waas"],
-                ["3", "Sage Rodriguez", "$56,142", "Netherlands", "Baileux"],
-                [
-                  "4",
-                  "Philip Chaney",
-                  "$38,735",
-                  "Korea, South",
-                  "Overland Park"
-                ],
-                [
-                  "5",
-                  "Doris Greene",
-                  "$63,542",
-                  "Malawi",
-                  "Feldkirchen in Kärnten"
-                ],
-                ["6", "Mason Porter", "$78,615", "Chile", "Gloucester"]
-              ]}
-            />
+          <Table
+                tableHeaderColor="warning"
+                tableHead={["Class Period", "Name", "Contact", "Guardian"]}
+                tableData={[
+                  ["1", "Carol Adams", "(603) 6542-986", "Frank"],
+                  ["1", "Minerva Hooper", "(603) 6542-986", "Linda"],
+                  ["1", "Sage Rodriguez", "(603) 6542-986", "Angie"],
+                  ["1", "Philip Chaney", "(603) 6542-986", "Nick"],
+                  ["2", "Dakota Rice", "(603) 6542-986", "Antonio"],
+                  ["2", "Karen Graves", "(603) 6542-986", "Allesandra"],
+                  ["2", "Breonna Brown", "(603) 6542-986", "Camden"],
+                  ["2", "Anthony Cooper", "(603) 6542-986", "Mathilda"],
+                  ["3", "Amy Silverston", "(603) 6542-986", "George"],
+                  ["3", "Bradley ", "(603) 6542-986", "Robert"],
+                  ["3", "Sage Rodriguez", "(603) 6542-986", "Mike"],
+                  ["3", "Philip Chaney", "(603) 6542-986", "Daniel"]
+                ]}
+              />
           </CardBody>
         </Card>
       </GridItem>
