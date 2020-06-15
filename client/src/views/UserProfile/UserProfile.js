@@ -51,8 +51,8 @@ export default function UserProfile() {
               <GridContainer>
                 <GridItem xs={12} sm={12} md={5}>
                   <CustomInput
-                    labelText="Company (disabled)"
-                    id="company-disabled"
+                    labelText="UNH Trilogy"
+                    id="company"
                     formControlProps={{
                       fullWidth: true
                     }}
@@ -133,7 +133,7 @@ export default function UserProfile() {
                 <GridItem xs={12} sm={12} md={12}>
                   <InputLabel style={{ color: "#AAAAAA" }}>About me</InputLabel>
                   <CustomInput
-                    labelText="Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo."
+                    labelText="Insert bio information here"
                     id="about-me"
                     formControlProps={{
                       fullWidth: true
@@ -153,12 +153,12 @@ export default function UserProfile() {
         </GridItem>
         <GridItem xs={12} sm={12} md={4}>
           <Card profile>
-            <CardAvatar profile>
+{/*             <CardAvatar profile>
               <a href="#pablo" onClick={e => e.preventDefault()}>
                 <img src={avatar} alt="..." />
               </a>
-            </CardAvatar>
-            <CardBody profile>
+            </CardAvatar> */}
+{/*             <CardBody profile>
               <h6 className={classes.cardCategory}>CEO / CO-FOUNDER</h6>
               <h4 className={classes.cardTitle}>Alec Thompson</h4>
               <p className={classes.description}>
@@ -169,7 +169,7 @@ export default function UserProfile() {
               <Button color="primary" round>
                 Follow
               </Button>
-            </CardBody>
+            </CardBody> */}
           </Card>
         </GridItem>
       </GridContainer>
