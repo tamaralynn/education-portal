@@ -64,7 +64,7 @@ function App() {
           <Redirect from="/" to="/admin/dashboard" />
         </Switch>
       )}
-      {!user && <SignUp />}``
+      {!user && <SignUp />}
     </Router>
   );
 }
