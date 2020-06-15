@@ -97,7 +97,7 @@ export default function Admin({ ...rest }) {
       {
         <Sidebar
           routes={routes}
-          logoText={"Creative Tim"}
+          logoText={"Education Portal"}
           logo={logo}
           image={image}
           handleDrawerToggle={handleDrawerToggle}
@@ -120,15 +120,7 @@ export default function Admin({ ...rest }) {
         ) : (
           <div className={classes.map}>{switchRoutes}</div>
         )}
-        {getRoute() ? <Footer /> : null}
-        <FixedPlugin
-          handleImageClick={handleImageClick}
-          handleColorClick={handleColorClick}
-          bgColor={color}
-          bgImage={image}
-          handleFixedClick={handleFixedClick}
-          fixedClasses={fixedClasses}
-        />
+        
       </div>
     </div>
   );
