@@ -61,7 +61,7 @@ const dashboardRoutes = [
     component: TableList,
     layout: "/admin"
   },
-  {
+/*   {
     path: "/typography",
     name: "Typography",
     rtlName: "طباعة",
@@ -101,7 +101,7 @@ const dashboardRoutes = [
     component: RTLPage,
     layout: "/rtl"
   },
-
+ */
 ];
 
 export default dashboardRoutes;
